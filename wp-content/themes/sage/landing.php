@@ -119,6 +119,60 @@
   </div>
 </div>
 
+<div class="sec-6">
+  <h1><?php the_field('section_6_-_title'); ?></h1>
+  <div class="col-3_wrap">
+
+
+    <?php if( have_rows('section_6_-_3_column') ): ?>
+      <?php while( have_rows('section_6_-_3_column') ): the_row();
+
+    // vars
+    $s6_title = get_sub_field('title');
+    $s6_textarea = get_sub_field('snippet');
+    ?>
+
+    <div class="col-text">
+      <h3><?php echo $s6_title; ?></h3>
+      <?php echo $s6_textarea; ?>
+    </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
+  </div>
+</div>
+
+<div class="sec-7">
+  <div class="s7_text-area">
+    <h1><?php the_field('section_7_-_title'); ?></h1>
+    <?php the_field('section_7_-_snippet'); ?>
+  </div>
+</div>
+
+<div class="sec-8" style="background-image: url(<?php the_field('section_8_-_background_image'); ?>);">
+  <div class="s8_container">
+    <h1><?php the_field('section_8_-_title'); ?></h1>
+    <div class="sec3-tiles">
+      <?php if( have_rows('section_8_-_tiles') ): ?>
+        <?php while( have_rows('section_8_-_tiles') ): the_row();
+
+      // vars
+      $s3_image = get_sub_field('image');
+      $s3_snip = get_sub_field('snippet');
+      ?>
+
+      <div class="s3-tile">
+        <img src="<?php echo $s3_image; ?>" class="s3-img">
+        <?php echo $s3_snip; ?>
+      </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
+    </div>
+  </div>
+</div>
+
+<div class="sec-9">
+</div>
+
 
 
 
@@ -129,7 +183,7 @@
 $(window).scroll(function () {
 		if ($(this).scrollTop() > 30) {
 			$('.define_headr').stop().animate({
-					height:'120px'
+					height:'110px'
 				}, 200);
 		} else {
 			$('.define_headr').stop().animate({
