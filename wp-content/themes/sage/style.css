@@ -1,0 +1,513 @@
+/*
+Theme Name:         Sage Starter Theme
+Theme URI:          https://roots.io/sage/
+Description:        Sage is a WordPress starter theme. <a href="https://github.com/roots/sage">Contribute on GitHub</a>
+Version:            8.5.0
+Author:             Roots
+Author URI:         https://roots.io/
+Text Domain:        sage
+
+License:            MIT License
+License URI:        http://opensource.org/licenses/MIT
+*/
+
+
+
+/* UNIVERSAL DEFAULT */
+
+html,body
+{
+    width: 100%;
+
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+h1 {
+    display: block;
+    font-size: initial;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+h2 {
+    display: block;
+    font-size: initial;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+ul, menu, dir {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+/* WP MENU - FIX */
+
+.menu-define-container {
+  display: none;
+}
+
+/* FONT IMPORT */
+
+/* IBM Plex Sans */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300i,400,400i');
+/* Martel */
+@import url('https://fonts.googleapis.com/css?family=Martel');
+
+/* NAV in WP CRM */
+
+.nav-primary {
+}
+
+/* HEADER */
+
+.define_headr {
+  width: 100%;
+  height: 200px;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1000;
+}
+.define_headr .header-logo {
+  position: absolute;
+  height: 80px;
+  width: auto;
+  top: 18px;
+  left: 42px;
+}
+.define_headr .h-right {
+  position: absolute;
+  top: 41px;
+  right: 41px;
+  display: flex;
+}
+.define_headr .h-right .h-snippet {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  text-align: right;
+  color: #636363;
+  line-height: 20px;
+  max-width: 300px;
+  margin-right: 53px;
+}
+.define_headr .h-right a.hero_btn1 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  background-color: #3F916D;
+  text-decoration: none;
+  padding: 14px 20px;
+  margin-right: 20px;
+  border-radius: 4px;
+}
+.define_headr .h-right a.hero_btn2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  color: #3F916D;
+  background-color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #3F916D;
+}
+
+/* UNIVERSAL TAGS */
+
+h1 {
+  color: #053C5E;
+  font-weight: 900;
+}
+
+
+/* SECTION 1 */
+
+.sec-1 {
+  width: 100%;
+  height: auto;
+  background-size: 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 100px;
+  padding-top: 0px;
+  position: relative;
+  top: 200px;
+  min-height: 1300px;
+}
+.sec-1 h1 {
+  font-family: 'Martel', serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  line-height: 52px;
+  max-width: 900px;
+  margin: auto;
+}
+.sec-1 h1.sec1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: unset;
+  top: 100px;
+}
+.sec-1 h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 29px;
+  font-weight: 500;
+  text-align: center;
+  font-style: italic;
+  color: #212B53;
+  padding-top: 100px;
+}
+.sec-1 h2.sec1 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: unset;
+  top: 260px;
+}
+.sec-1 h2.line_2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 33px;
+  text-align: center;
+  font-style: italic;
+  color: #3F916D;
+  padding-top: 500px;
+  max-width: 1000px;
+  margin: auto;
+}
+hr.divide {
+  width: 100px;
+  height: 5px;
+  background-color: #EAECF0;
+  border-width: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.sec-1 h1.sec2_title {
+  font-family: 'Martel', serif;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  line-height: 52px;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 0px;
+}
+.sec-1 .col-3_wrap {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  padding-top: 20px;
+}
+.sec-1 .col-3_wrap .col-text {
+  width: 350px;
+  border-left-style: dotted;
+  border-left-width: 4px;
+  border-left-color: #3F916D;
+}
+.sec-1 .col-3_wrap .col-text p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  color: #68686A;
+  max-width: 250px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sec-1 .chart {
+  width: 550px;
+  height: 292px;
+  margin: auto;
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  margin-bottom: 50px;
+}
+.sec-1 .chart .ch-1 {
+  width: 100%;
+  background-color: #3F916D;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 28px;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.sec-1 .chart .ch-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.sec-1 .chart .ch-2 .cell-contain {
+  width: 100%;
+  display: flex;
+  height: 60px;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(2n) {
+  height: 80px;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(3n) {
+  height: 80px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c1 {
+  width: 40%;
+  border: 1px solid gray;
+}
+.sec-1 .chart .ch-2 .cell-contain .c1 p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #026354;
+  text-align: center;
+  padding-top: 25px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c2 {
+  width: 30%;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.sec-1 .chart .ch-2 .cell-contain .c2 p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #026354;
+  text-align: center;
+  padding-top: 20px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c3 {
+  width: 30%;
+  border: 1px solid gray;
+}
+.sec-1 .chart .ch-2 .cell-contain .c3 p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 20px;
+  color: #026354;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Chart Styling */
+
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(2n) .c2 {
+  background-color: #fff;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(2n) .c2 p {
+  color: #053C5E;
+  padding-top: 25px;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(2n) .c3 {
+  background-color: #fff;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(2n) .c3 p {
+  color: #053C5E;
+  padding-top: 25px;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(3n) .c2 {
+  background-color: #fff;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(3n) .c2 p {
+  color: #053C5E;
+  padding-top: 25px;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(3n) .c3 {
+  background-color: #fff;
+}
+.sec-1 .chart .ch-2 .cell-contain:nth-of-type(3n) .c3 p {
+  color: #053C5E;
+  padding-top: 25px;
+}
+.sec-1 h1.last {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  line-height: 52px;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 0px;
+}
+
+/* SECTION 3 (SEC 1 + 2 Are Together) */
+
+.sec-3 {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.sec-3 h1 {
+  font-family: 'Martel', serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.25px;
+  line-height: 55px;
+  max-width: 900px;
+  margin: auto;
+  padding-top: 100px;
+}
+.sec-3 .sec3-tiles {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  padding-top: 50px;
+}
+.sec-3 .sec3-tiles .s3-tile {
+  width: 400px;
+  height: 350px;
+  position: relative;
+  -webkit-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  box-shadow: 0px 2px 5px 2px rgba(0,0,0,0.28);
+  margin: 15px;
+}
+.sec-3 .sec3-tiles .s3-tile .s3-img {
+  height: 70px;
+  width: auto;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.sec-3 .sec3-tiles .s3-tile h2 {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.25px;
+  color: #3F916D;
+  text-align: center;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.sec-3 .sec3-tiles .s3-tile p {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 90%;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+  color: #68686A;
+  line-height: 26px;
+  font-size: 15px;
+}
+
+/* SECTION 4 (Blue Background) */
+.sec-4 {
+  width: 100%;
+  height: 400px;
+  background-color: #053C5E;
+  display: flex;
+  align-items: center;
+}
+.sec-4 .s4_text-area {
+  margin: auto;
+}
+.sec-4 .s4_text-area h1 {
+  font-family: 'Martel', serif;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+}
+.sec-4 .s4_text-area p {
+  padding-top: 20px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 700px;
+}
+
+/* SECTION 5 (Gray Texture Background) */
+
+.sec-5 {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  min-height: 1100px;
+}
+.sec-5 .sec5-contain {
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  padding-top: 150px;
+
+}
+.sec-5 .sec5-contain h1.sec5 {
+  font-family: 'Martel', serif;
+  font-size: 40px;
+  line-height: 46px;
+  color: #212B53;
+  letter-spacing: 0.02px;
+  text-align: left;
+  max-width: 430px;
+}
+.sec-5 .sec5-contain .sec5-r {
+  position: absolute;
+  right: 0px;
+  top: 130px;
+}
+.sec-5 .sec5-contain .sec5-r .asset {
+  width: 650px;
+  height: 120px;
+  background-color: #fff;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.20);
+  -moz-box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.20);
+  box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.20);
+  position: relative;
+}
+.sec-5 .sec5-contain .sec5-r .asset img {
+  height: 32px;
+  width: 32px;
+  padding: 10px;
+  position: absolute;
+  left: -25px;
+  top: 35px;
+  background-color: #026354;
+  border-radius: 50px;
+}
+.sec-5 .sec5-contain .sec5-r .asset p {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #68686A;
+  padding-left: 50px;
+  padding-top: 40px;
+  max-width: 550px;
+}
