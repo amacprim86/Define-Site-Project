@@ -181,13 +181,31 @@
 <!-- NAV Dropdown on-scroll Function -->
 <script>
 $(window).scroll(function () {
-		if ($(this).scrollTop() > 30) {
+		if ($(this).scrollTop() > 40) {
 			$('.define_headr').stop().animate({
-					height:'110px'
+					height:'90px'
 				}, 200);
 		} else {
 			$('.define_headr').stop().animate({
 					height:'200px'
+				}, 200);
+		}
+    if ($(this).scrollTop() > 40) {
+			$('.define_headr .header-logo').stop().animate({
+					height:'60px'
+				}, 200);
+		} else {
+			$('.define_headr .header-logo').stop().animate({
+					height:'80px'
+				}, 200);
+		}
+    if ($(this).scrollTop() > 40) {
+			$('.define_headr .h-right').stop().animate({
+					top:'25px'
+				}, 200);
+		} else {
+			$('.define_headr .h-right').stop().animate({
+					top:'41px'
 				}, 200);
 		}
 	});
