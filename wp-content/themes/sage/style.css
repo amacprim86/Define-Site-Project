@@ -1436,19 +1436,39 @@ hr.divide {
 .sec-5 {
   min-height: 2000px;
 }
-.sec-5 .sec5-contain .sec5-r .asset {
+.sec-5 .sec5-contain .sec5-r .asset { /* TILES 1 of 2 */
   width: 300px;
   height: 250px;
 }
 .sec-5 .sec5-contain .sec5-r .asset p {
   padding-left: unset;
-  text-align: center;
-  max-width: 240px;
+  max-width: 220px;
   font-size: 14px;
   margin: auto;
 }
 .sec-5 .sec5-contain .sec5-r .asset img {
-  top: 88px;
+  top: 96px;
+  height: 28px;
+  width: 28px;
+}
+.sec-9 {
+  min-height: 1400px;
+}
+.sec-9 .sec9-contain .sec9-r .asset {
+  width: 300px;
+  height: 250px;
+}
+.sec-9 .sec9-contain .sec9-r .asset p {
+  padding-left: unset;
+  max-width: 220px;
+  font-size: 14px;
+  margin: auto;
+}
+.sec-9 .sec9-contain .sec9-r .asset h4 {
+  top: 66px;
+  height: 28px;
+  width: 28px;
+  font-size: 26px;
 }
 
 .define_f {
@@ -1458,7 +1478,235 @@ hr.divide {
 }
 
 @media only screen and (max-width: 600px) {
-.sec-1 .chart {
-  
+
+.define_mobile .header-logo {
+  height: 48px;
 }
+.define_mobile .h-right .h-snippet {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.sec-1 h1.sec1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.sec-1 h2.sec1 {
+  top: 80px;
+  font-size: 16px;
+}
+
+.sec-1 h2.line_2 {
+  padding-top: 250px;
+  font-size: 16px;
+  max-width: 80%;
+}
+.sec-1 h1.sec2_title {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-1 .chart {
+  width: 400px;
+}
+.sec-1 .chart .ch-1 {
+  font-size: 24px;
+  padding-bottom: 24px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c1 p {
+  font-size: 18px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c2 p {
+  font-size: 18px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c3 p {
+  font-size: 18px;
+}
+.sec-1 h1.last {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-3 h1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-3 .sec3-tiles .s3-tile h2 {
+  font-size: 18px;
+}
+.sec-4 .s4_text-area h1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-4 .s4_text-area p {
+  font-size: 14px;
+}
+.sec-5 .sec5-contain h1.sec5 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-6 h1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-7 .s7_text-area h1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-7 .s7_text-area p {
+  font-size: 14px;
+  max-width: 80%;
+}
+.sec-8 .s8_container h1 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-8 .s8_container .sec3-tiles .s3-tile p {
+  font-size: 14px;
+}
+.sec-9 .sec9-contain h1.sec9 {
+  max-width: 80%;
+  font-size: 24px;
+  line-height: 30px;
+}
+.sec-9 .sec9-contain .sec9-r p {
+  max-width: 300px;
+}
+.sec-9 h2 {
+  bottom: 160px;
+  font-size: 16px;
+}
+}
+
+@media only screen and (max-width: 500px) {
+
+/* HEADER NAV CHANGE! */
+
+.show, .navmobile_menu {
+  top: 80px;
+}
+
+.define_mobile {
+  height: 80px;
+}
+
+.define_mobile .header-logo {
+  height: 40px;
+  left: 10px;
+}
+.define_mobile .h-right {
+  top: 22px;
+  right: 10px;
+}
+.define_mobile .h-right .h-snippet {
+  font-size: 11px;
+  max-width: 160px;
+}
+
+/* H1 Font CHANGE! */
+
+.sec-1 h1.sec1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-1 h1.sec2_title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-1 h1.last {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-3 h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-4 .s4_text-area h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-5 .sec5-contain h1.sec5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-6 h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-7 .s7_text-area h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-8 .s8_container h1 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.sec-9 .sec9-contain h1.sec9 {
+  font-size: 20px;
+  line-height: 24px;
+}
+.define_f {
+  padding-top: 120px;
+}
+/* OTHER CHANGES! */
+
+.sec-1 h2.sec1 {
+  font-size: 14px;
+  line-height: 20px;
+  top: 60px;
+}
+.sec-1 h2.line_2 {
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 200px;
+}
+/* CHART */
+.sec-1 .chart {
+  width: 300px;
+}
+.sec-1 .chart .ch-1 {
+  font-size: 20px;
+  padding-bottom: 26px;
+  padding-top: 24px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c1 p {
+  font-size: 14px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c2 p {
+  font-size: 14px;
+}
+.sec-1 .chart .ch-2 .cell-contain .c3 p {
+  font-size: 14px;
+}
+/* 3 Col. TILES */
+
+.sec-3 .sec3-tiles {
+  justify-content: center;
+  margin: auto;
+}
+.sec-3 .sec3-tiles .s3-tile {
+  width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sec-8 .s8_container .sec3-tiles .s3-tile {
+  width: 300px;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+
 }
