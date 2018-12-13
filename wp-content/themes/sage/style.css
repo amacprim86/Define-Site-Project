@@ -903,7 +903,15 @@ hr.divide {
   text-align: right;
 }
 
+/* ANIMATION CSS */
 
+.os-animation {
+  opacity: 0;
+}
+
+.os-animation.animated {
+  opacity: 1;
+}
 
 
 /* RESPONSIVE - 1920+px to 320px */
@@ -1767,6 +1775,9 @@ hr.divide {
 .sec-5 .sec5-contain .sec5-r .asset {
   width: 280px;
 }
+.sec-5 .sec5-contain .sec5-r .asset p {
+  padding-top: 70px;
+}
 .sec-5 .sec5-contain .sec5-r .asset img {
   height: 20px;
   width: 20px;
@@ -1792,6 +1803,9 @@ hr.divide {
   width: 20px;
   left: -20px;
   font-size: 20px;
+}
+.sec-9 .sec9-contain .sec9-r .asset p {
+  padding-top: 70px;
 }
 .sec-9 .sec9-contain .sec9-r p {
   max-width: 280px;

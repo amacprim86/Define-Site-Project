@@ -38,4 +38,12 @@
 
     </div>
   </div>
+
+<!-- Additional SCRIPT FILES -->
+
+<script src="/wp-content/themes/sage/assets/scripts/smoothscroll_anchor.js"></script>
+<script src="/wp-content/themes/sage/assets/scripts/waypoints.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+
 </footer>

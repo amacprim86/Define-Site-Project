@@ -36,11 +36,11 @@
 </div>
 
 <div class="sec-1" style="background-image: url(<?php the_field('section_1_-_background_image'); ?>);">
-  <h1 class="sec1"><?php the_field('section_1_-_title'); ?></h1>
+  <h1 class="sec1 os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_1_-_title'); ?></h1>
   <h2 class="sec1"><?php the_field('section_1_-_subtitle'); ?></h2>
   <h2 class="line_2"><?php the_field('section_1_-_subtitle2'); ?></h2>
   <hr class="divide">
-  <h1 class="sec2_title"><?php the_field('section_2_-_title'); ?></h1>
+  <h1 class="sec2_title os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_2_-_title'); ?></h1>
   <div class="col-3_wrap">
 
     <?php if( have_rows('deductibles') ): ?>
@@ -82,11 +82,11 @@
       </div>
 
   </div>
-  <h1 class="last"><?php the_field('section_2_-_title_below_chart'); ?></h1>
+  <h1 class="last os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_2_-_title_below_chart'); ?></h1>
 </div>
 
 <div class="sec-3">
-  <h1><?php the_field('section_3_-_title'); ?></h1>
+  <h1 class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_3_-_title'); ?></h1>
   <div class="sec3-tiles">
     <?php if( have_rows('section_3_-_tiles') ): ?>
       <?php while( have_rows('section_3_-_tiles') ): the_row();
@@ -97,7 +97,7 @@
     $s3_snip = get_sub_field('snippet');
     ?>
 
-    <div class="s3-tile">
+    <div class="s3-tile os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.21s">
       <img src="<?php echo $s3_image; ?>" class="s3-img">
       <h2><?php echo $s3_title; ?></h2>
       <?php echo $s3_snip; ?>
@@ -109,14 +109,14 @@
 
 <div class="sec-4">
   <div class="s4_text-area">
-    <h1><?php the_field('section_4_-_title'); ?></h1>
+    <h1 class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_4_-_title'); ?></h1>
     <?php the_field('section_4_-_snippet'); ?>
   </div>
 </div>
 
 <div class="sec-5" style="background-image: url(<?php the_field('section_5_-_background_image'); ?>);">
   <div class="sec5-contain">
-    <h1 class="sec5"><?php the_field('section_5_-_title'); ?></h1>
+    <h1 class="sec5 os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_5_-_title'); ?></h1>
     <div class="sec5-r">
 
       <?php if( have_rows('section_5_-_assets') ): ?>
@@ -138,7 +138,7 @@
 </div>
 
 <div class="sec-6">
-  <h1><?php the_field('section_6_-_title'); ?></h1>
+  <h1 class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_6_-_title'); ?></h1>
   <div class="col-3_wrap">
 
 
@@ -161,14 +161,14 @@
 
 <div class="sec-7">
   <div class="s7_text-area">
-    <h1><?php the_field('section_7_-_title'); ?></h1>
+    <h1 class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_7_-_title'); ?></h1>
     <?php the_field('section_7_-_snippet'); ?>
   </div>
 </div>
 
 <div class="sec-8" style="background-image: url(<?php the_field('section_8_-_background_image'); ?>);">
   <div class="s8_container">
-    <h1><?php the_field('section_8_-_title'); ?></h1>
+    <h1 class="os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_8_-_title'); ?></h1>
     <div class="sec3-tiles">
       <?php if( have_rows('section_8_-_tiles') ): ?>
         <?php while( have_rows('section_8_-_tiles') ): the_row();
@@ -178,7 +178,7 @@
       $s3_snip = get_sub_field('snippet');
       ?>
 
-      <div class="s3-tile">
+      <div class="s3-tile os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.21s">
         <img src="<?php echo $s3_image; ?>" class="s3-img">
         <?php echo $s3_snip; ?>
       </div>
@@ -190,7 +190,7 @@
 
 <div class="sec-9">
   <div class="sec9-contain">
-    <h1 class="sec9"><?php the_field('section_9_-_title'); ?></h1>
+    <h1 class="sec9 os-animation" data-os-animation="slideInLeft" data-os-animation-delay="0s"><?php the_field('section_9_-_title'); ?></h1>
     <div class="sec9-r">
 
       <?php if( have_rows('section_9_-_how_it_works') ): ?>
@@ -223,7 +223,7 @@
 <!-- NAV Dropdown on-scroll Function -->
 <script>
 $(window).scroll(function () {
-		if ($(this).scrollTop() > 40) {
+		if ($(this).scrollTop() > 20) {
 			$('.define_headr').stop().animate({
 					height:'90px'
 				}, 200);
@@ -232,7 +232,7 @@ $(window).scroll(function () {
 					height:'200px'
 				}, 200);
 		}
-    if ($(this).scrollTop() > 40) {
+    if ($(this).scrollTop() > 20) {
 			$('.define_headr .header-logo').stop().animate({
 					height:'60px'
 				}, 200);
@@ -241,7 +241,7 @@ $(window).scroll(function () {
 					height:'80px'
 				}, 200);
 		}
-    if ($(this).scrollTop() > 40) {
+    if ($(this).scrollTop() > 20) {
 			$('.define_headr .h-right').stop().animate({
 					top:'25px'
 				}, 200);
