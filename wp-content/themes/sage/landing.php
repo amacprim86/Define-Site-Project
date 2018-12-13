@@ -4,7 +4,7 @@
  */
 ?>
 
-
+<!-- DESKTOP HEADER (Over 1000px) -->
 <div class="define_headr">
   <img src="<?php the_field('hero_logo'); ?>" class="header-logo">
   <div class="h-right">
@@ -14,6 +14,24 @@
     </a>
     <a href="" class="hero_btn2"><?php the_field('hero_button_2'); ?>
     </a>
+  </div>
+</div>
+<!-- MOBILE HEADER (Under 1000px) -->
+<div class="define_mobile">
+  <img src="<?php the_field('hero_logo'); ?>" class="header-logo">
+  <div class="h-right">
+    <p class="h-snippet"><?php the_field('hero_snippet'); ?>
+    </p>
+    <div class="hamburger">
+      <img src="/wp-content/uploads/2018/12/menu-button.png" class="ham">
+    </div>
+  </div>
+</div>
+
+<div class="navmobile_menu">
+   <div class="pretty_padding">
+     <a href="" class="hero_btn1"><?php the_field('hero_button_1'); ?></a>
+     <a href="" class="hero_btn2"><?php the_field('hero_button_2'); ?></a>
   </div>
 </div>
 
@@ -171,6 +189,30 @@
 </div>
 
 <div class="sec-9">
+  <div class="sec9-contain">
+    <h1 class="sec9"><?php the_field('section_9_-_title'); ?></h1>
+    <div class="sec9-r">
+
+      <?php if( have_rows('section_9_-_how_it_works') ): ?>
+        <?php while( have_rows('section_9_-_how_it_works') ): the_row();
+
+      // vars
+      $s9_image = get_sub_field('display_text');
+      $s9_snip = get_sub_field('snippet');
+      ?>
+
+      <div class="asset">
+        <h4><?php echo $s9_image; ?></h4>
+        <?php echo $s9_snip; ?>
+      </div>
+    <?php endwhile; ?>
+  <?php endif; ?>
+    <?php the_field('section_9_-_details_1'); ?>
+    <?php the_field('section_9_-_details_2'); ?>
+    </div>
+  </div>
+  <h2><?php the_field('section_9_-_bottom_title'); ?></h2>
+  <img src="<?php the_field('section_9_-_bottom_image'); ?>" class="s9_bi">
 </div>
 
 
@@ -209,4 +251,17 @@ $(window).scroll(function () {
 				}, 200);
 		}
 	});
+</script>
+
+
+<script>
+$('.hamburger').click(function(){
+$('.navmobile_menu').toggleClass('show', 1000 );
+});
+</script>
+
+<script>
+$("#ham").click(function() {
+$('.transform').toggleClass('transform-active', 1000 );
+});
 </script>
