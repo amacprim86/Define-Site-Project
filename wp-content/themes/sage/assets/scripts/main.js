@@ -75,3 +75,36 @@
   $(document).ready(UTIL.loadEvents);
 
 })(jQuery); // Fully reference jQuery after this point.
+
+
+// Custom JS
+
+$(window).scroll(function () {
+		if ($(this).scrollTop() > 20) {
+			$('.define_headr').stop().animate({
+					height:'90px'
+				}, 200);
+		} else {
+			$('.define_headr').stop().animate({
+					height:'200px'
+				}, 200);
+		}
+    if ($(this).scrollTop() > 20) {
+			$('.define_headr .header-logo').stop().animate({
+					height:'60px'
+				}, 200);
+		} else {
+			$('.define_headr .header-logo').stop().animate({
+					height:'80px'
+				}, 200);
+		}
+    if ($(this).scrollTop() > 20) {
+			$('.define_headr .h-right').stop().animate({
+					top:'25px'
+				}, 200);
+		} else {
+			$('.define_headr .h-right').stop().animate({
+					top:'41px'
+				}, 200);
+		}
+	});
